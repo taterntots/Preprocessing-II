@@ -168,19 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.navContainer {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navContainer nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 3% 0%;
-  border-bottom: 2px dashed silver;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
-nav .navContainer {
+.navContainer nav .navItemContainer {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
 }
-nav .navContainer a {
+.navContainer nav .navItemContainer a {
   font-size: 1.6rem;
   justify-content: space-between;
   text-decoration: none;

@@ -1,22 +1,28 @@
 // Navigation Styles here
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 3% 0%;
-    border-bottom: 2px dashed silver;
+.navContainer {
+    border-bottom: 2px dashed @silver;
 
-    .navContainer {
+    nav {
         display: flex;
-        justify-content: space-evenly;
-        width: 50%;
-    
-        a{
-            font-size: 1.6rem;
-            justify-content: space-between;
-            text-decoration: none;
-            color: black;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 3% 0%;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+
+        .navItemContainer {
+            display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+        
+            a{
+                font-size: 1.6rem;
+                justify-content: space-between;
+                text-decoration: none;
+                color: black;
+            }
         }
     }
 }
