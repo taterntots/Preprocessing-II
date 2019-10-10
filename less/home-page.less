@@ -98,11 +98,24 @@
 
       .btn {
         .buttonDesign(#008080, white);
+        
+        &:hover {
+          animation: shadow-pulse 1s infinite;
+        }
 
         @media @mobile {
           width: 100%;
         }
       }
+    }
+  }
+
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
     }
   }
 }// home
