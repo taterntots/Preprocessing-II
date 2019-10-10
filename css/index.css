@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px;
+  }
+}
 .navContainer {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -180,10 +185,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .navContainer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .navContainer nav .navItemContainer {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .navContainer nav .navItemContainer {
+    width: 100%;
+  }
 }
 .navContainer nav .navItemContainer a {
   font-size: 1.6rem;

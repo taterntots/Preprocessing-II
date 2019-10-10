@@ -12,10 +12,20 @@
         width: 100%;
         margin: 0 auto;
 
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+        
         .navItemContainer {
             display: flex;
             justify-content: space-evenly;
             width: 50%;
+            margin-top: 15px;
+
+            @media @mobile {
+                width: 100%;
+            }
         
             a{
                 font-size: 1.6rem;
